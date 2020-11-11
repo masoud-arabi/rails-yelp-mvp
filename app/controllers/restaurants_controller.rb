@@ -10,7 +10,6 @@ end
 
 def new
 @restaurant = Restaurant.new
-
 end
 
 def create
@@ -20,7 +19,7 @@ def create
 end
 
 def edit
-  end
+end
 
 def update
     @restaurant.update(restaurant_params)
@@ -29,10 +28,8 @@ def update
 end
 
 def destroy
-  raise
-    @restaurant.destroy
+  @restaurant.destroy
   redirect_to restaurants_path
-
 end
 
 
